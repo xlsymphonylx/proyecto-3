@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="atm-container">
+      <div class="option-container">
+        <div class="atm-option"></div>
+        <div class="atm-option"></div>
+        <div class="atm-option"></div>
+        <div class="atm-option"></div>
+      </div>
+      <div class="main-container">
+        <div class="atm-display">
+          <p class="atm-display-title">Ingrese Pin</p>
+          <input type="text" id="mainInput" readonly />
+        </div>
+        <div class="atm-button-container">
+          <div class="atm-keyboard-1">
+            <div class="atm-key-1" onclick="keyBoardInput(1)">1</div>
+            <div class="atm-key-1" onclick="keyBoardInput(2)">2</div>
+            <div class="atm-key-1" onclick="keyBoardInput(3)">3</div>
+            <div class="atm-key-1" onclick="keyBoardInput(4)">4</div>
+            <div class="atm-key-1" onclick="keyBoardInput(5)">5</div>
+            <div class="atm-key-1" onclick="keyBoardInput(6)">6</div>
+            <div class="atm-key-1" onclick="keyBoardInput(7)">7</div>
+            <div class="atm-key-1" onclick="keyBoardInput(8)">8</div>
+            <div class="atm-key-1" onclick="keyBoardInput(9)">9</div>
+            <div class="atm-key-1"></div>
+            <div class="atm-key-1" onclick="keyBoardInput(0)">0</div>
+            <div class="atm-key-1"></div>
+          </div>
+          <div class="atm-keyboard-2">
+            <div class="atm-key-2" style="background-color: red; color: white">
+              CANCELAR
+            </div>
+            <div
+              class="atm-key-2"
+              style="background-color: orange; color: white"
+              onclick="cleanInput()"
+            >
+              RETROCEDER
+            </div>
+            <div
+              class="atm-key-2"
+              style="background-color: blue; color: white"
+              onclick="checkPin()"
+            >
+              ENTER
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="option-container">
+        <div class="atm-option"></div>
+        <div class="atm-option"></div>
+        <div class="atm-option"></div>
+        <div class="atm-option"></div>
+      </div>
+    </div>
+    <script src="../js/confirmacionPin.js"></script>
+    <script src="../utils/keyboard.js"></script>
+  </body>
+</html>

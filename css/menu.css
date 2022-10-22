@@ -1,0 +1,9 @@
+.atm-display-option {
+  padding: 1rem;
+  background-color: #9c9d9e;
+  color: white;
+  width: 12.5rem;
+}
+.atm-display-option:not(.atm-display-option:first-child) {
+  margin-top: 3rem;
+}

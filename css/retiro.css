@@ -1,0 +1,9 @@
+.atm-display-option-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.atm-option-column {
+  display: flex;
+  flex-direction: column;
+}
